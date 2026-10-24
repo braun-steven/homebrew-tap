@@ -1,7 +1,7 @@
-class Yabai < Formula
-  desc "Tiling window manager for macOS (Swift fork with a static yabai.toml config)"
-  homepage "https://github.com/braun-steven/yabai"
-  url "https://github.com/braun-steven/yabai/releases/download/v7.1.25/yabai-v7.1.25.tar.gz"
+class YabaiSb < Formula
+  desc "Tiling window manager for macOS (Swift fork of yabai with an i3-style tree)"
+  homepage "https://github.com/braun-steven/yabai-sb"
+  url "https://github.com/braun-steven/yabai-sb/releases/download/v1.0.0/yabai-sb-v1.0.0.tar.gz"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   license "MIT"
 
@@ -45,7 +45,7 @@ class Yabai < Formula
   end
 
   test do
-    assert_match "yabai-v#{version}", shell_output("#{bin}/yabai --version")
+    assert_match "yabai-sb-v#{version}", shell_output("#{bin}/yabai --version")
     system bin/"yabai", "--check-config", pkgshare/"examples/yabai.toml"
   end
 end
