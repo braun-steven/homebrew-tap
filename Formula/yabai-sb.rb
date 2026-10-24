@@ -2,7 +2,7 @@ class YabaiSb < Formula
   desc "Tiling window manager for macOS (Swift fork of yabai with an i3-style tree)"
   homepage "https://github.com/braun-steven/yabai-sb"
   url "https://github.com/braun-steven/yabai-sb/releases/download/v1.0.0/yabai-sb-v1.0.0.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "63ed2e3ff1d94e612b1f025fe7b662dee4c5caefeed6532259f5868f34dd0e35"
   license "MIT"
 
   depends_on arch: :arm64
